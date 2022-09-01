@@ -258,3 +258,50 @@ function deepClone(obj) = {
 
 ![image-20220829014324187](notes.images/image-20220829014324187.png)
 
+
+
+#### find 
+
+- filter returns an array, find returns the first element that meets the condition
+
+![image-20220831104029524](notes.images/image-20220831104029524.png)
+
+
+
+#### includes / some / every 
+
+![image-20220901090814758](notes.images/image-20220901090814758.png)
+
+
+
+#### flat / flatMap
+
+![image-20220901091238978](notes.images/image-20220901091238978.png)
+
+
+
+#### sorting 
+
+![image-20220901091806347](notes.images/image-20220901091806347.png)
+
+
+
+#### create arrays
+
+![image-20220901093026037](notes.images/image-20220901093026037.png) 
+
+![image-20220901093502503](notes.images/image-20220901093502503.png)
+
+
+
+#### summary
+
+![image-20220901093838301](notes.images/image-20220901093838301.png)
+
+
+
+#### practice
+
+![image-20220901095123237](notes.images/image-20220901095123237.png)
+
+ 
