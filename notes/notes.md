@@ -53,7 +53,7 @@ function deepClone(obj) = {
 
 
 
-## DATA STRUCTURES, MODERN OPERATORS AND STRINGS
+## 09.DATA STRUCTURES, MODERN OPERATORS AND STRINGS
 
 ### Destructoring arrays, spread & rest
 
@@ -128,15 +128,15 @@ function deepClone(obj) = {
 
 
 
-### Functions
+## 10.FUNCTIONS
 
-#### Default parameters 
+### Default parameters 
 
 ![image-20220828021322443](notes.images/image-20220828021322443.png)
 
 
 
-#### Callback functions
+### Callback functions
 
 - functions that accept other functions as parameters
 
@@ -150,7 +150,7 @@ function deepClone(obj) = {
 
 
 
-#### the call & apply methods
+### the call & apply methods
 
 - .call(this, parameter1, parameter2....)
 - .apply(this, [paramter1, parameter2])
@@ -217,7 +217,7 @@ function deepClone(obj) = {
 
 
 
-## ARRAYS
+## 11.ARRAYS
 
 - array.slice() doesn't mutate the orginal array 
 - [...arr] the spread operator also creates a shallow copy of the original array 
@@ -232,7 +232,7 @@ function deepClone(obj) = {
 
 
 
-#### forEach
+### forEach
 
 - array.forEach(element, index, array) the order of inputs matter
 - break & continue keywords doesn't work for forEach
@@ -248,19 +248,19 @@ function deepClone(obj) = {
 
  
 
-#### map / filter / reduce
+### map / filter / reduce
 
 ![image-20220829014513115](notes.images/image-20220829014513115.png)
 
 
 
-#### map
+### map
 
 ![image-20220829014324187](notes.images/image-20220829014324187.png)
 
 
 
-#### find 
+### find 
 
 - filter returns an array, find returns the first element that meets the condition
 
@@ -268,25 +268,25 @@ function deepClone(obj) = {
 
 
 
-#### includes / some / every 
+### includes / some / every 
 
 ![image-20220901090814758](notes.images/image-20220901090814758.png)
 
 
 
-#### flat / flatMap
+### flat / flatMap
 
 ![image-20220901091238978](notes.images/image-20220901091238978.png)
 
 
 
-#### sorting 
+### sorting 
 
 ![image-20220901091806347](notes.images/image-20220901091806347.png)
 
 
 
-#### create arrays
+### create arrays
 
 ![image-20220901093026037](notes.images/image-20220901093026037.png) 
 
@@ -294,14 +294,45 @@ function deepClone(obj) = {
 
 
 
-#### summary
+### summary
 
 ![image-20220901093838301](notes.images/image-20220901093838301.png)
 
 
 
-#### practice
+### practice
 
 ![image-20220901095123237](notes.images/image-20220901095123237.png)
 
  
+
+## 12.NUMBERS / DATES/ TIMERS
+
+### converting / checking numbers 
+
+![image-20220901112238333](notes.images/image-20220901112238333.png)
+
+
+
+### Math / rounding
+
+![image-20220901112816560](notes.images/image-20220901112816560.png)
+
+
+
+### BigInt
+
+![image-20220901114413027](notes.images/image-20220901114413027.png)
+
+ 
+
+### Dates
+
+![image-20220901115103981](notes.images/image-20220901115103981.png)
+
+ 
+
+### Timer / setTimeout / setInterval
+
+![image-20220902062202343](notes.images/image-20220902062202343.png)
+
