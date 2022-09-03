@@ -336,3 +336,217 @@ function deepClone(obj) = {
 
 ![image-20220902062202343](notes.images/image-20220902062202343.png)
 
+
+
+## 13.DOM
+
+### selecting / creating / deleting elements
+
+- .getElementsByTagName & .getElementsByClassName both return an automatically updated HTML collection
+
+![image-20220902070548638](notes.images/image-20220902070548638.png)
+
+
+
+- prepend - insert element as the first child of the selected element
+- append - insert element as the last child of the slected element
+- remove - parentElement.removeChild - these two are the same, remove is a more recent feature
+
+![image-20220902074653346](notes.images/image-20220902074653346.png)
+
+
+
+### styles / attributes / classes
+
+- use getAttribute to get non-standard attributes aka customed attributes
+- getAttribute - gets you the relative path, dot notation gets you the absolute path
+
+![image-20220902075948645](notes.images/image-20220902075948645.png)
+
+
+
+- don't use .className to modify class names, it only allows one existing class name and will override all other names.
+
+![image-20220902080155236](notes.images/image-20220902080155236.png)
+
+
+
+### smooth scrolling
+
+![image-20220902082107307](notes.images/image-20220902082107307.png)
+
+
+
+### types of event handlers
+
+- addEventListener is the preferred way because:
+  - it allows us to add multiple events to one element
+  - it allows us to remove events
+- on(mouseenter) this syntax is depercated
+- defining in HTML is also depercated
+
+![image-20220902082738078](notes.images/image-20220902082738078.png)
+
+![image-20220902083002861](notes.images/image-20220902083002861.png)
+
+
+
+### bubbling / capturing
+
+- capturing phase - when an eventListener is created, it will be firstly created at the root element, it then travels to the target element one by one
+- target phase - the phase that the eventListener actually reaches the target element
+- bubbling phase - the eventListener will then travels back to the root element
+- eventListeners only traverse between direct parent elements rather than sibling elements
+- not all events have these phases
+
+![image-20220902083623781](notes.images/image-20220902083623781.png)
+
+
+
+### event delegation
+
+- the idea is we only add one event listener to the parent element when there are way too many child elements that trigger the event
+- pay attention, we are not add events to the element but event listeners. the event will bubble up to the parent elemnt from the child element, and the event listener will catch it
+- by doing this, we can same a lot of memory, improve performace, and make our event listeners more dynamic since we might add new child elements
+
+
+
+### DOM traversing
+
+- we use methods that retrieve elements more often than the ones that retrieve nodes
+
+![image-20220902114152327](notes.images/image-20220902114152327.png)
+
+![image-20220902114220793](notes.images/image-20220902114220793.png)
+
+
+
+### defer / async script loading
+
+![image-20220902155716178](notes.images/image-20220902155716178.png)
+
+ ![image-20220902155928575](notes.images/image-20220902155928575.png)
+
+
+
+## 14.OOP
+
+![image-20220903043951698](notes.images/image-20220903043951698.png)
+
+
+
+![image-20220903044315928](notes.images/image-20220903044315928.png)
+
+![image-20220903044417505](notes.images/image-20220903044417505.png)
+
+![image-20220903044612078](notes.images/image-20220903044612078.png)
+
+![image-20220903044659369](notes.images/image-20220903044659369.png)
+
+
+
+### prototypes
+
+![image-20220903044959498](notes.images/image-20220903044959498.png)
+
+![image-20220903045132017](notes.images/image-20220903045132017.png)
+
+![image-20220903051028374](notes.images/image-20220903051028374.png)
+
+![image-20220903051314341](notes.images/image-20220903051314341.png)
+
+
+
+### creating classes
+
+- function constructors - outdated
+
+![image-20220903053151379](notes.images/image-20220903053151379.png)
+
+
+
+- ES6 classes
+
+![image-20220903052934357](notes.images/image-20220903052934357.png)
+
+- first class citizen means that classes can be passed in as parameters and can be returned
+
+![image-20220903053233435](notes.images/image-20220903053233435.png)
+
+  
+
+### getter / setter
+
+- objects
+
+![image-20220903054813895](notes.images/image-20220903054813895.png)
+
+
+
+- classes 
+- there be a conflict if we want to set the same property name with setters, add an underscore in front to prevent this conflict
+- but doing this will create a new property which override the previous property 
+
+![image-20220903055207401](notes.images/image-20220903055207401.png)
+
+
+
+![image-20220903055907525](notes.images/image-20220903055907525.png)
+
+
+
+### Inheritance
+
+- constructor functions
+- need to manually set constructor
+
+![image-20220903063746869](notes.images/image-20220903063746869.png)![image-20220903063910835](notes.images/image-20220903063910835.png)
+
+
+
+- ES6 classes
+- extends / super keywords
+
+![image-20220903070049907](notes.images/image-20220903070049907.png)
+
+
+
+- create prototype chain using Object.create 
+
+![image-20220903070250049](notes.images/image-20220903070250049.png)
+
+![image-20220903070500115](notes.images/image-20220903070500115.png)
+
+ 
+
+### encapsulation
+
+![image-20220903071042210](notes.images/image-20220903071042210.png)
+
+ 
+
+- fields ending with ;
+- fields are created on  the instance instead of in the prototype
+- use # for private field 
+
+![image-20220903071807095](notes.images/image-20220903071807095.png)
+
+![image-20220903072112637](notes.images/image-20220903072112637.png)
+
+ 
+
+### chaining methods
+
+- return this in each method so we get access to the current object
+
+![image-20220903072334223](notes.images/image-20220903072334223.png)
+
+![image-20220903072428937](notes.images/image-20220903072428937.png)
+
+ 
+
+### summary
+
+![image-20220903072942889](notes.images/image-20220903072942889.png)
+
+ 
