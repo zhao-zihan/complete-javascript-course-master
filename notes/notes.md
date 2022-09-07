@@ -550,3 +550,55 @@ function deepClone(obj) = {
 ![image-20220903072942889](notes.images/image-20220903072942889.png)
 
  
+
+16.ASYNCHRONOUS
+
+![image-20220905170812857](notes.images/image-20220905170812857.png)
+
+ 
+
+- synchronous > micro-task queue > callbacks
+
+![image-20220905201549167](notes.images/image-20220905201549167.png)
+
+![image-20220905201809248](notes.images/image-20220905201809248.png)
+
+
+
+
+
+![image-20220907151227206](notes.images/image-20220907151227206.png)
+
+ 
+
+### parallel promises
+
+- Promise.all() combinator
+- if one promise rejects, the whole promise rejects as well 
+
+![image-20220907152248882](notes.images/image-20220907152248882.png)
+
+ 
+
+
+
+- Promise.race()
+- only gets the first one who wins the race no matter the promise rejects or fullfills
+- we can use this characteristic to create a timeout function which prevents users wait too long for loading the page
+
+![image-20220907152616599](notes.images/image-20220907152616599.png) ![image-20220907152818879](notes.images/image-20220907152818879.png)
+
+
+
+- Promise.allSettled()
+- return all values even if there will be rejected ones
+
+![image-20220907153145620](notes.images/image-20220907153145620.png)
+
+
+
+-  Promise.any()
+- return the first fullfilled value
+
+![image-20220907153303214](notes.images/image-20220907153303214.png)
+
