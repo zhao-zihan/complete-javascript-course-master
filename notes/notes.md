@@ -602,3 +602,43 @@ function deepClone(obj) = {
 
 ![image-20220907153303214](notes.images/image-20220907153303214.png)
 
+
+
+17.MODERN JS MODEL TOOLING
+
+### modules
+
+![image-20220907154721108](notes.images/image-20220907154721108.png)
+
+![image-20220907154855681](notes.images/image-20220907154855681.png)
+
+
+
+- all modules are run in strict mode by default
+- all import statements are hoisted
+
+
+
+### top-level await
+
+- we can use top level await in modules
+- it will return the actual data instead of the promise 
+
+![image-20220907162024399](notes.images/image-20220907162024399.png)
+
+
+
+### command line
+
+- ls - show all files
+- cd - go to the selected directory
+- cd .. - go up
+- cd ../.. go up twice
+- clear / cmd + k - clear output
+- mkdir - make new folder
+- touch - make new files
+- touch file1 file2 file3 - create multiple files
+- rm - delete files
+- mv fileName location - move file to the assigned location
+- rmdir - delete empty folders
+- rm -R - delete recursively all files in a folder(included)
